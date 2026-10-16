@@ -1,0 +1,193 @@
+/* Elite Nails: black, turquoise and a light mint canvas. */
+:root { --accent: #9edddd; --night: #080c0c; }
+.button { border-radius: 999px; }
+.brand-mark { flex-direction: row; gap: 10px; align-items: center; }
+.brand-mark > img { width: 58px; height: 58px; max-height: none; object-fit: contain; border-radius: 50%; background: #000; flex: 0 0 auto; }
+.brand-wordmark { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.brand-name { font-size: 1.9rem; line-height: 1; }
+.brand-caption { font-size: .48rem; margin: 0; letter-spacing: .22em; }
+.site-header { background: #080c0cf5; border-color: #9edddd26; color: #effafa; }
+.header-inner { min-height: 88px; gap: 16px; }
+.site-header .brand-name, .site-header .brand-caption, .site-header .bio-shortcut { color: var(--accent); }
+.site-header .button, .hero .actions .button:first-child { background: var(--accent); border-color: var(--accent); color: #102626; }
+.site-header .button:hover, .hero .actions .button:first-child:hover { background: #c4eeee; }
+.site-header .menu-toggle { background: transparent; color: var(--accent); border-color: #9edddd50; }
+.site-header :focus-visible, .hero :focus-visible { outline-color: var(--accent); }
+.desktop-nav a:after { background: var(--accent); }
+.hero { background: var(--night); color: #edf7f5; }
+.hero-inner { min-height: 500px; grid-template-columns: 1.05fr 1fr; }
+.hero-copy { max-width: 610px; padding: 60px 0; }
+.hero .eyebrow { color: #e7f3f0; max-width: 32ch; font-size: .73rem; line-height: 1.7; letter-spacing: .2em; }
+.hero h1 { max-width: none; font-size: clamp(4rem, 7.4vw, 7rem); color: var(--accent); letter-spacing: -.045em; line-height: 1; }
+.hero-brandline { display: flex; align-items: center; gap: 14px; max-width: 420px; color: var(--accent); margin: 12px 0; }
+.hero-brandline span { height: 1px; flex: 1; background: #9edddd70; }
+.hero-brandline .icon { width: 23px; height: 23px; }
+.hero-subtitle { max-width: 420px; text-align: center; text-transform: uppercase; letter-spacing: .45em; font-size: .8rem; margin: 0 0 24px; }
+.hero-description { max-width: 340px; color: #dae8e5; margin: 0 0 24px; }
+.hero-photo { width: 100%; opacity: 1; }
+.hero-photo > img { object-position: center; }
+.hero-photo:after { background: linear-gradient(90deg, #080c0cee 0%, #080c0cb0 35%, transparent 70%); }
+.hero-signature, .photo-script { display: none; }
+.hero .actions .button.outline { color: #e5f9f7; background: #080c0c80; border-color: #9edddd70; }
+.photo-note { background: #080c0cce; color: #e4efed; }
+.feature-band { background: #101717; color: #eaf6f3; }
+.feature-strip { grid-template-columns: repeat(4,minmax(0,1fr)); padding-block: 25px; border: 0; gap: 0; }
+.feature-strip > div { font-size: .77rem; line-height: 1.5; padding: 0 20px; gap: 9px; }
+.feature-strip > div + div { border-left: 1px solid #9edddd30; }
+.feature-strip .icon { color: var(--accent); width: 27px; height: 27px; }
+.section-heading h2:after { content: ''; display: block; width: 48px; height: 1px; background: var(--primary); margin: 15px auto 0; opacity: .4; }
+.service-card, .offer-card, .review-card { border-radius: 16px; }
+.bio-page { background: radial-gradient(ellipse at top left,#173c3b,transparent 65%),var(--night); }
+.bio-cover { background: #080c0c; }
+.bio-cover > img { opacity: .85; object-position: 70% center; }
+.bio-cover:after { background: linear-gradient(90deg,#080c0ce0,transparent); }
+.bio-cover .brand-mark { left: 20px; top: 25px; }
+.bio-cover .brand-name { font-size: 2rem; color: var(--accent); }
+.bio-cover .brand-caption { color: var(--accent); }
+.bio-cover .brand-mark > img { display: none; }
+.bio-avatar { object-fit: contain; background: #000; }
+.bio-footer .brand-name { font-size: 1.6rem; }
+.bio-footer .brand-mark > img { width: 40px; height: 40px; }
+.site-footer .brand-mark > img { width: 54px; height: 54px; }
+.mobile-menu .brand-mark { margin-bottom: 12px; }
+@media (max-width: 1100px) {
+  .header-inner { gap: 12px; }
+  .hero-inner { min-height: 450px; }
+  .hero h1 { font-size: clamp(3.8rem,8vw,6rem); }
+}
+@media (max-width: 650px) {
+  .header-inner { min-height: 76px; gap: 8px; flex-wrap: wrap; padding-block: 8px; }
+  .brand-mark { gap: 7px; }
+  .brand-mark > img { width: 42px; height: 42px; max-height: none; }
+  .brand-name { font-size: 1.5rem; }
+  .brand-caption { font-size: .4rem; letter-spacing: .16em; }
+  .site-header .logo { flex-shrink: 1; }
+  .bio-shortcut { font-size: .65rem; }
+  .hero-inner { min-height: 380px; }
+  .hero-copy { padding: 34px 0 40px; width: 100%; }
+  .hero .eyebrow { max-width: 26ch; font-size: .59rem; line-height: 1.7; }
+  .hero h1 { font-size: clamp(3.5rem,14vw,5.4rem); max-width: none; }
+  .hero-brandline, .hero-subtitle { max-width: 270px; }
+  .hero-brandline { margin: 9px 0; }
+  .hero-subtitle { font-size: .66rem; margin-bottom: 18px; }
+  .hero-description { font-size: .78rem; max-width: 29ch; line-height: 1.55; margin-bottom: 20px; }
+  .hero-photo { width: 100%; }
+  .hero-photo > img { object-position: 65% center; }
+  .hero-photo:after { background: linear-gradient(90deg,#080c0ceb 0%,#080c0cb0 40%,#080c0c30 100%); }
+  .hero-copy .actions { max-width: 320px; gap: 9px; }
+  .hero .actions .button { min-height: 46px; padding: 12px 14px; }
+  .hero .actions .button.outline { border: 0; padding-inline: 4px; background: transparent; font-size: .72rem; }
+  .photo-note { font-size: .55rem; bottom: 9px; right: 12px; }
+  .feature-strip { grid-template-columns: repeat(2,minmax(0,1fr)); padding-block: 12px; gap: 0; }
+  .feature-strip > div { padding: 11px 10px; font-size: .69rem; flex-direction: row; text-align: left; gap: 10px; }
+  .feature-strip > div:nth-child(3) { border-left: 0; }
+  .feature-strip > div:nth-child(n+3) { border-top: 1px solid #9edddd20; }
+  .feature-strip .icon { width: 23px; height: 23px; }
+  .bio-cover .brand-name { font-size: 2rem; }
+  .bio-cover .brand-mark { top: 22px; left: 18px; }
+  .bio-footer .brand-mark > img { width: 35px; height: 35px; }
+}
+@media (max-width: 360px) {
+  .brand-name { font-size: 1.3rem; }
+  .brand-mark > img { width: 36px; height: 36px; }
+  .header-inner { gap: 6px; }
+  .bio-shortcut { padding-inline: 0; }
+  .hero .actions { display: flex; flex-direction: column; align-items: flex-start; }
+  .hero .actions .button.outline { min-height: 44px; }
+}
+.accessible-contrast .hero, .accessible-contrast .feature-band, .accessible-contrast .site-header { background: #000 !important; }
+.accessible-contrast .hero h1, .accessible-contrast .hero-subtitle, .accessible-contrast .hero-description, .accessible-contrast .hero .eyebrow { color: #fff !important; }
+.accessible-contrast .hero .actions .button.outline { background: #000 !important; color: #ff0 !important; border: 1px solid #ff0; }
+.accessible-contrast .brand-name, .accessible-contrast .brand-caption, .accessible-contrast .feature-strip .icon { color: #ff0 !important; }
+/* Retratos originais preservados, sem cortar rostos ou alterar resultados. */
+.team-profiles { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.team-profile { display: grid; grid-template-columns: minmax(100px,.9fr) minmax(0,1fr); align-items: center; background: var(--soft); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.team-profile > img { width: 100%; height: 280px; object-fit: contain; background: #111a1a; }
+.team-profile-copy { padding: 22px; min-width: 0; }
+.team-profile-copy .eyebrow { font-size: .6rem; letter-spacing: .1em; }
+.team-profile-copy h3 { font-size: 2.3rem; }
+.team-profile-copy > p:not(.eyebrow) { font-size: .82rem; }
+.team-bookings { display: flex; flex-wrap: wrap; gap: 8px; }
+.team-bookings .button { font-size: .72rem; }
+.team-compact { grid-template-columns: 1fr; gap: 10px; margin: 16px 0; }
+.team-compact .team-profile { grid-template-columns: 72px minmax(0,1fr); border-radius: 12px; }
+.team-compact .team-profile > img { height: 120px; }
+.team-compact .team-profile-copy { padding: 10px 12px; }
+.team-compact .team-profile-copy h3 { font-size: 1.55rem; margin-bottom: 7px; }
+.team-compact .eyebrow { margin-bottom: 4px; font-size: .55rem; }
+.team-compact .button { padding: 6px 9px; font-size: .65rem; min-height: 44px; }
+.service-professional { font-size: .7rem; color: var(--primary); margin-bottom: 8px; }
+.gallery-grid .gallery-item > img { object-fit: contain; background: #111a1a; }
+.bio-mini-gallery img { object-fit: contain; background: #111a1a; }
+@media(max-width: 900px) { .team-profiles:not(.team-compact) { gap: 16px; } .team-profile { grid-template-columns: 1fr; } .team-profile > img { height: 230px; } }
+@media(max-width: 650px) {
+  .team-profiles { grid-template-columns: 1fr; gap: 14px; }
+  .team-profile { grid-template-columns: 110px minmax(0,1fr); }
+  .team-profile > img { height: 100%; min-height: 200px; }
+  .team-profile-copy { padding: 16px; }
+  .team-profile-copy h3 { font-size: 1.8rem; }
+  .team-profile-copy > p:not(.eyebrow) { font-size: .75rem; }
+  .team-compact .team-profile > img { min-height: 0; }
+}
+@media(max-width: 360px) { .team-profile { grid-template-columns: 85px minmax(0,1fr); } .team-profile-copy { padding: 12px; } }
+
+.service-card.portrait .service-image img { object-fit: contain; background: #111a1a; }
+.depilation-block { display:grid; grid-template-columns:minmax(180px,.65fr) minmax(0,1fr); gap:40px; align-items:center; background:var(--soft); border-radius:20px; padding:28px; }
+.depilation-block > img { width:100%; height:390px; object-fit:contain; background:#111a1a; border-radius:12px; }
+.depilation-copy { min-width:0; }
+.depilation-copy label { display:block; margin-bottom:8px; font-size:.85rem; }
+.depilation-copy select { width:100%; min-height:48px; padding:12px; border:1px solid var(--line); border-radius:8px; background:var(--background); margin-bottom:14px; }
+.depilation-copy details { margin-top:18px; }
+.depilation-copy summary { cursor:pointer; min-height:44px; padding-block:12px; }
+.depilation-copy ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); padding:0; list-style:none; gap:4px 15px; }
+.depilation-copy li { min-width:0; }
+.depilation-copy .text-button { text-align:left; }
+.depilation-block.compact { grid-template-columns:85px minmax(0,1fr); gap:16px; padding:16px; align-items:start; }
+.depilation-block.compact > img { height:150px; }
+.depilation-block.compact h2 { font-size:1.8rem; }
+.depilation-block.compact p { font-size:.78rem; }
+@media(max-width:650px) { .depilation-block { grid-template-columns:90px minmax(0,1fr); gap:15px; padding:16px; align-items:start; } .depilation-block > img { height:170px; } .depilation-copy h2 { font-size:1.9rem; } .depilation-copy p { font-size:.8rem; } .depilation-copy ul { grid-template-columns:1fr; } }
+@media(max-width:380px) { .depilation-block, .depilation-block.compact { grid-template-columns:1fr; } .depilation-block > img, .depilation-block.compact > img { height:170px; width:128px; margin-inline:auto; } }
+
+.instagram-button { background:linear-gradient(145deg,#6e2aa2,#b32661,#b24716); color:#fff; }
+.instagram-button:focus-visible { outline:3px solid var(--primary); outline-offset:4px; }
+
+/* Retratos sem moldura ou preenchimento preto; fotos preservadas inteiras. */
+.team-profile > img, .team-compact .team-profile > img,
+.depilation-block > img, .depilation-block.compact > img,
+.vanessa-intro > img { background:transparent; border:0; box-shadow:none; object-fit:contain; }
+.vanessa-intro { display:grid; grid-template-columns:minmax(180px,.65fr) minmax(0,1fr); gap:40px; align-items:center; background:var(--soft); border-radius:20px; padding:28px; margin-bottom:24px; }
+.vanessa-intro > img { width:100%; height:auto; max-height:390px; border-radius:12px; }
+.vanessa-intro > div { min-width:0; }
+.vanessa-section .service-card.text-service, .bio-page .service-card.text-service { display:block; padding:0; min-height:0; background:var(--background); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+.service-card.text-service > button { display:flex; align-items:center; justify-content:space-between; gap:14px; width:100%; min-height:64px; padding:16px; border:0; background:transparent; text-align:left; font-size:.92rem; line-height:1.4; }
+.service-card.text-service > button:hover { background:var(--soft); }
+.service-card.text-service > button .icon { color:var(--primary); width:18px; }
+.vanessa-compact.section.wrap { width:100%; padding:0; margin:0; }
+.vanessa-compact .vanessa-intro { grid-template-columns:85px minmax(0,1fr); gap:16px; padding:16px; }
+.vanessa-compact .vanessa-intro h2 { font-size:1.8rem; }
+.vanessa-compact .vanessa-intro p { font-size:.78rem; }
+.vanessa-compact .services-grid { grid-template-columns:1fr; }
+.vanessa-compact .filters { flex-wrap:wrap; }
+@media(max-width:650px) {
+ .vanessa-intro { grid-template-columns:90px minmax(0,1fr); gap:15px; padding:16px; }
+ .vanessa-intro h2 { font-size:1.9rem; }
+ .vanessa-intro p { font-size:.8rem; }
+ .vanessa-section .services-grid { grid-template-columns:1fr; }
+}
+@media(max-width:380px) {
+ .vanessa-intro, .vanessa-compact .vanessa-intro { grid-template-columns:1fr; }
+ .vanessa-intro > img { width:128px; margin-inline:auto; }
+}
+
+.google-reviews-card { max-width:760px; margin:auto; padding:clamp(20px,4vw,40px); border:1px solid var(--line); background:var(--soft); border-radius:20px; text-align:center; }
+.google-reviews-card h3 { font-size:2rem; }
+.google-review-count strong { font-family:var(--serif); font-size:3rem; color:var(--primary); }
+.google-reviews-card small { display:block; margin-top:16px; color:var(--muted); font-size:.7rem; line-height:1.5; }
+
+.bio-address { font-size:.78rem; line-height:1.6; text-align:center; margin:14px 0; }
+.bio-address .icon { width:17px; height:17px; margin-right:4px; }
+
+.review-actions { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:20px; }
+.review-help { font-size:.78rem; line-height:1.6; margin:14px auto 0; max-width:440px; color:var(--muted); }
+@media(max-width:650px) { .review-actions { flex-direction:column; } .review-actions .button { width:100%; min-height:48px; } }
