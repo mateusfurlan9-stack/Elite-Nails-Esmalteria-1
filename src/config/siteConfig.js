@@ -1,11 +1,12 @@
 export const siteConfig = {
-  "demo": true,
+  "demo": false,
   "brand": {
     "name": "Elite Nails",
     "subtitle": "Esmalteria",
     "logo": "/media/elite-logo.webp",
     "professional": "Equipe Elite Nails",
-    "tagline": "Beleza, cuidado e autoestima em cada detalhe."
+ 
+   "tagline": "Beleza, cuidado e autoestima em cada detalhe."
   },
   "theme": {
     "primary": "#236666",
@@ -29,7 +30,7 @@ export const siteConfig = {
     "reviewsUrl": "https://www.google.com/search?q=Esmalteria+Elite+Nails+Diadema+avalia%C3%A7%C3%B5es"
   },
   "seo": {
-    "url": "",
+    "url": "https://www.elitenailsesmalteria.shop",
     "title": "Elite Nails | Esmalteria",
     "description": "Uma experiência de beleza, cuidado e nail design. Conheça nossos serviços e solicite seu agendamento."
   },
